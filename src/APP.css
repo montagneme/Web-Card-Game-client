@@ -1,0 +1,490 @@
+.box{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: Consolas,'微软雅黑';
+}
+.alert-enter,.alert-leave-to{
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.alert{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    height: auto;
+    border-radius: 2px;
+    background-color: rgb(240,240,240);
+    text-align: center;
+    transition: all .5s;
+    color: black;
+    font-size: 12px;
+    z-index: 105;
+}
+.id_box{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: 0px 2px 8px rgb(230,230,230);
+    border-radius: 4px;
+    transition: all .5s;
+}
+.id_title{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.id-enter,.id-leave-to{
+    opacity: 0;
+}
+.id{
+    width: 80%;
+    height: 30px;
+    border: 1px solid rgb(220,220,220);
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+}
+.id_submit{
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    margin: auto;   
+    margin-top: 20px;
+    background-color: rgb(80,80,80);
+    color: white;
+    font-size: 14px;
+}
+.start{
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 4px;
+    transition: all .5s;
+    z-index: 106;
+}
+.start-enter,.start-leave-to{
+    opacity: 0;
+}
+.game-enter,.game-leave-to{
+    opacity: 0;
+}
+.game{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.opp_coin{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.own_coin{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.own_name{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.opp_name{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin: auto;
+}
+.pk_ok-enter,.pk_ok-leave-to{
+    opacity: 0;
+}
+.opppk_ok{
+    transition: all .2s;
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: firebrick;
+    box-shadow: 0px 0px 10px rgb(178,34,34);
+    color: white;
+    border-radius: 2px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: -20px;
+    animation: pk_ani 1s linear infinite;
+    font-size: 14px;
+    z-index: 108;
+}
+.ownpk_ok{
+    transition: all .2s;
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: firebrick;
+    box-shadow: 0px 0px 10px rgb(178,34,34);
+    color: white;
+    border-radius: 2px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -20px;
+    animation: pk_ani 1s linear infinite;
+    font-size: 14px;
+    z-index: 108;
+}
+@keyframes pk_ani{
+    0%{
+        transform: translateX(0px) scale(1);
+    }
+    5%{
+        transform: translateX(-10px) scale(0.5);
+    }
+    10%{
+        transform: translateX(10px) scale(1);
+    }
+    15%{
+        transform: translateX(-5px);
+    }
+    20%{
+        transform: translateX(5px);
+    }
+    25%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.opp_pk_box{
+    transition: all .5s;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid rgb(80,80,80);
+    border-radius: 100%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: -20px;
+    
+    
+}
+.own_pk_box{
+    transition: all .5s;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid rgb(80,80,80);
+    border-radius: 100%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: -20px;
+    
+}
+.center_box{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
+}
+.time{
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:darkred;
+    transition: all .5s;
+}
+.win-enter,.win-leave-to{
+    opacity: 0;
+}
+.win{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .5s;
+}
+.send_poker_box{
+    width: 88.5px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.send_poker_box span{
+    position: absolute;
+    left: 15px;
+    bottom: -25px;
+    
+}
+.pokers-enter,.pokers-leave-to{
+    opacity: 0;
+    transform: translateY(-50px) rotate(15deg);
+}
+.own_pokers{
+    width: 200px;
+    height: 140px;
+    position: absolute;
+    bottom: 120px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.own_pokers li{
+    width: 95px;
+    height: 140px;
+    transition: all .5s;
+    list-style: none;
+    position: absolute;
+    right:20px;
+}
+.own_pokers li:first-child{
+   left: 20px;
+}
+.opp_pokers{
+    width: 200px;
+    height: 140px;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.opp_pokers li{
+    width: 95px;
+    height: 140px;
+    transition: all .5s;
+    list-style: none;
+    position: absolute;
+    right:20px;
+}
+.opp_pokers li:first-child{
+   left: 20px;
+}
+
+
+
+
+.ownpokerImg{
+    width: 95px;
+    transition: all .5s;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgb(150,150,150);
+}
+.opppokerImg{
+    width: 95px;
+    transition: all .5s;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgb(150,150,150);
+}
+.ownpokerImg:hover{
+    transform: translateY(-40px);
+}
+.ownpokerImg0{
+    transform: rotate(-15deg);
+}
+.ownpokerImg1{
+    transform: rotate(15deg);
+}
+.opppokerImg0{
+    transform: rotate(15deg);
+}
+.opppokerImg1{
+    transform: rotate(-15deg);
+}
+.opppoker_pk{
+    transform: translateY(60px);
+}
+.ownpoker_pk{
+    transform: translateY(-60px);
+}
+.double-enter,.double-leave-to{
+    opacity: 0;
+}
+.go-enter,.go-leave-to{
+    opacity: 0;
+}
+.double_num_box{
+    width: 100px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.double{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    background-color: rgb(138, 43, 226);
+    box-shadow: 0px 0px 10px rgb(138, 43, 226);
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    transition: all .5s;
+}
+.go{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    background-color: forestgreen;
+    box-shadow: 0px 0px 10px rgb(34,139,34);
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    transition: all .5s;
+}
+.pk{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background-color: firebrick;
+    box-shadow: 0px 0px 10px rgb(178,34,34);
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    transition: all .5s;
+}
+
+.own_double_ani{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom:-80px;
+    left: 20px;
+    transform: rotate(150deg);
+    
+}
+.own_double_img{
+    width: 100%;
+    transition: all .2s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.opp_double_img{
+    width: 100%;
+    transition: all .2s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.opp_double_ani{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top:-90px;
+    left: 25px;
+    transform: rotate(-150deg);
+}
+
+.own_double-enter{
+    
+    transform: rotate(-40deg);
+    transform-origin: left top;
+}
+.own_double-leave-to{
+    opacity: 0;
+}
+
+.opp_double-enter{
+    
+    transform: rotate(40deg);
+    transform-origin: left bottom;
+}
+.opp_double-leave-to{
+    opacity: 0;
+}
+
